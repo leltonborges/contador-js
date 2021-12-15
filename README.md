@@ -2,4 +2,4 @@
 !["Demo"](img/beta.png)
 
 ### Page
-[Aqui]("https://www.google.com")
+[Click aqui e veja uma Demo](https://leltonborges.github.io/contador-js/)
