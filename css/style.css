@@ -1,0 +1,114 @@
+:root {
+    --font-size: 25px;
+    --color-default: #ffe4e4
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--font-size);
+}
+
+body {
+    background: #1a1c1f;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    background: #000;
+    margin: 20px auto;
+    color: var(--color-default);
+    width: 600px;
+    min-height: 200px;
+    border-radius: 5px;
+}
+button{
+    background: #149D00;
+    color: #000;
+    font-weight: 800;
+    border-radius: 15px;
+    padding: 5px 20px;
+    font-size: 0.7rem;
+    min-width: 110px;
+    cursor: pointer;
+}
+
+label{
+    margin: 15px;
+}
+
+input{
+    border: none;
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+
+input:hover, input:focus{
+    outline: #149D00 inset;
+}
+
+.cron{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cron-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 35px 35px;
+}
+
+.title p{
+    color: #149D00;
+    font-weight: 800;
+}
+
+.faltam{
+    font-size: 2rem;
+    color: #181817;
+}
+
+.time{
+    display: flex;
+}
+
+.disabled{
+    background: #1a1c1f;
+}
+
+.times-temp{
+    margin: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.times-temp p {
+    font-size: 3rem;
+}
+
+.times-temp span{
+    color: #149D00;
+    font-size: 1rem;
+}
+
+.buttons{
+    margin-bottom: 10px;
+}
+
