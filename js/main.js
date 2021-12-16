@@ -19,7 +19,7 @@ iniciar.addEventListener('click', () => {
         const cronDate = selectedDate.getTime() - currentDate.getTime()
     
         convertTime(cronDate)
-
+    
         if(cronDate <= 0 || isNaN(cronDate)){
             clearInterval(interval)
             reset()
@@ -30,10 +30,8 @@ iniciar.addEventListener('click', () => {
             setTime("#minutes", minutes)
             setTime("#secunds", secunds)
         }
-        
     }, 1000);
 })
-
 
 const convertTime = (millisecuds) => {
     let resto = 0
@@ -72,7 +70,7 @@ const reset = ()=>{
     setTime("#hours", hours)
     setTime("#minutes", minutes)
     setTime("#secunds", secunds)
-    document.querySelector('#iniciar').removeAttribute("disabled", "disabled");
+    document.querySelector('#iniciar').removeAttribute("disabled");
     document.querySelector('#iniciar').classList.remove("disabled")
     document.querySelector("#date").value = ""
 }
